@@ -11,8 +11,8 @@ from default_btn import *
 logging.basicConfig(level=logging.INFO)
 
 BOT_TOKEN = "7288939415:AAFqXavEYXOKmy9LsNGwNiE_wjlpURmLSB4"
-
-bot = Bot(token=BOT_TOKEN,parse_mode="HTML")
+PROXY_URL = "http://proxy.server:3128"
+bot = Bot(token=BOT_TOKEN,parse_mode="HTML",proxy=PROXY_URL)
 storage = MemoryStorage()
 dp = Dispatcher(bot=bot,storage=storage)
 
